@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subject Progress</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .table {
+      display: table;
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .header, .row {
+      display: table-row;
+    }
+
+    .cell {
+      display: table-cell;
+      padding: 12px 16px;
+      border-bottom: 1px solid #ccc;
+      vertical-align: middle;
+    }
+
+    .header .cell {
+      font-weight: bold;
+      color: gray;
+    }
+
+    .subject-cell {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .subject-name {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .dropdown-icon {
+      margin-left: auto;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .progress-bar-container {
+      width: 100px;
+      height: 16px;
+      background-color: #eee;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 100%;
+      background-color: #007bff;
+    }
+
+    .progress-text {
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="table">
+    <!-- Header Row -->
+    <div class="header">
+      <div class="cell">Subjects</div>
+      <div class="cell">Questions</div>
+      <div class="cell">Subject Covered</div>
+    </div>
+
+    <!-- Data Row -->
+    <div class="row">
+      <div class="cell">
+        <div class="subject-cell">
+          <span>📘 </span>
+          <a href="questions/416129/q1.html" class="subject-name">Prosthodontics</a>
+          <span class="dropdown-icon">▼</span>
+        </div>
+      </div>
+      <div class="cell">518</div>
+      <div class="cell">
+        <div class="progress-text">100%</div>
+        <div class="progress-bar-container">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
